@@ -129,13 +129,13 @@ ros2 run turtle_py turtle_circle
 
 ```bash
 # Custom linear speed
-ros2 run turtle_py turtle_circle --ros-args -p linear_speed:=3.0
+ros2 run turtle_py turtle_circle_param --ros-args -p linear_speed:=3.0
 
 # Custom angular speed
-ros2 run turtle_py turtle_circle --ros-args -p angular_speed:=2.0
+ros2 run turtle_py turtle_circle_param --ros-args -p angular_speed:=2.0
 
 # Both parameters
-ros2 run turtle_py turtle_circle --ros-args -p linear_speed:=1.5 -p angular_speed:=0.5
+ros2 run turtle_py turtle_circle_param --ros-args -p linear_speed:=1.5 -p angular_speed:=0.5
 ```
 
 ---
@@ -338,4 +338,5 @@ This tutorial is provided for educational purposes.
 ---
 
 **Happy Learning! 🚀**
+
 
