@@ -161,13 +161,6 @@ ros2 param get /circle_mover angular_speed
 ros2 param set /circle_mover linear_speed 4.0
 ros2 param set /circle_mover angular_speed 1.5
 ```
-
-### Dump All Parameters
-
-```bash
-ros2 param dump /circle_mover
-```
-
 ---
 
 ## 📊 ROS 2 Introspection Commands
@@ -338,5 +331,6 @@ This tutorial is provided for educational purposes.
 ---
 
 **Happy Learning! 🚀**
+
 
 
