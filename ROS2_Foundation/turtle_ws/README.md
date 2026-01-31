@@ -50,6 +50,10 @@ cd ~/ros2_ws
 
 ```bash
 # Download VS Code for Linux
+sudo snap install --classic code
+```
+```bash
+# Download VS Code for Linux
 wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 -O code.deb
 
 # Install the package
@@ -334,3 +338,4 @@ This tutorial is provided for educational purposes.
 ---
 
 **Happy Learning! 🚀**
+
