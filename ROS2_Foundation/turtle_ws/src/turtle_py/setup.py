@@ -26,6 +26,8 @@ setup(
         'console_scripts': [
             'turtle_circle = turtle_py.turtle_circle:main',
             'turtle_circle_param = turtle_py.turtle_circle_param:main',
+            'custom_pub = turtle_py.custom_pub:main',
+            'custom_sub = turtle_py.custom_sub:main',
         ],
     },
 )
