@@ -28,6 +28,8 @@ setup(
             'turtle_circle_param = turtle_py.turtle_circle_param:main',
             'custom_pub = turtle_py.custom_pub:main',
             'custom_sub = turtle_py.custom_sub:main',
+            'service_server = turtle_py.service_server:main',
+            'service_client = turtle_py.service_client:main',
         ],
     },
 )
