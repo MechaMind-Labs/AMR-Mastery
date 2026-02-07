@@ -30,6 +30,7 @@ setup(
             'custom_sub = turtle_py.custom_sub:main',
             'service_server = turtle_py.service_server:main',
             'service_client = turtle_py.service_client:main',
+            'turtle_spawner_killer = turtle_py.turtle_spawner_killer:main',
         ],
     },
 )

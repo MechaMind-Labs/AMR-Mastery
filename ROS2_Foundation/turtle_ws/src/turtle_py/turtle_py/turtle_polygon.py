@@ -32,8 +32,8 @@ class ClosedLoopPolygonDrawer(Node):
         self.sides_drawn = 0
 
         # Tolerances
-        self.distance_tolerance = 0.01
-        self.angle_tolerance = 0.01
+        self.distance_tolerance = 0.0
+        self.angle_tolerance = 0.0
 
         # Control gains
         self.k_linear = 1.0
