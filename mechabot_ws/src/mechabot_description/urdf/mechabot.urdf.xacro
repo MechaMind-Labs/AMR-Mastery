@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<robot name="mechabot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:include filename="$(find mechabot_description)/urdf/mechabot_base.xacro" />
+    <xacro:include filename="$(find mechabot_description)/urdf/mechabot_sensors.xacro"/>
+    
+</robot>

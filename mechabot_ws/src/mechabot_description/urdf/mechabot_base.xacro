@@ -1,0 +1,152 @@
+<?xml version="1.0" ?>
+<robot name="mechabot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <link name="base_footprint"/>
+
+    <link name="base_link">
+        <visual>
+            <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_base_link.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.8 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="base_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0125" rpy="0.0 0.0 0.0"/>
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+    </joint>
+
+    <link name="right_wheel_link">
+        <visual>
+            <origin xyz="0.0 0.0925 -0.034" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_right_wheel.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 0.6 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="right_wheel_joint" type="continuous">
+        <origin xyz="0.0 -0.0925 0.0215" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="right_wheel_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <link name="left_wheel_link">
+        <visual>
+            <origin xyz="0.0 -0.0925 -0.034" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_left_wheel.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 0.6 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="left_wheel_joint" type="continuous">
+        <origin xyz="0.0 0.0925 0.0215" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="left_wheel_link"/>
+        <axis xyz="0.0 1.0 0.0"/>
+    </joint>
+
+    <link name="front_right_castor_link">
+        <visual>
+            <origin xyz="-0.085 0.065 -0.021" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/front_right_castor.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.8 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="front_right_castor_joint" type="fixed">
+        <origin xyz="0.085 -0.065 0.0085" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="front_right_castor_link"/>
+    </joint>
+
+    <link name="front_left_castor_link">
+        <visual>
+            <origin xyz="-0.085 -0.065 -0.021" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/front_left_castor.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.8 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="front_left_castor_joint" type="fixed">
+        <origin xyz="0.085 0.065 0.0085" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="front_left_castor_link"/>
+    </joint>
+
+    <link name="rear_right_castor_link">
+        <visual>
+            <origin xyz="0.085 0.065 -0.0205" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/rear_right_castor.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.8 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="rear_right_castor_joint" type="fixed">
+        <origin xyz="-0.085 -0.065 0.008" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="rear_right_castor_link"/>
+    </joint>
+
+    <link name="rear_left_castor_link">
+        <visual>
+            <origin xyz="0.085 -0.065 -0.0205" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/rear_left_castor.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="grey">
+                <color rgba="0.8 0.8 0.8 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="rear_left_castor_joint" type="fixed">
+        <origin xyz="-0.085 0.065 0.008" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="rear_left_castor_link"/>
+    </joint>
+
+    <link name="toplid_link">
+        <visual>
+            <origin xyz="0.0 0.0 -0.1125" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_toplid.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="red">
+                <color rgba="0.6 0.0 0.0 1.0"/>
+            </material>
+        </visual>
+    </link>
+
+    <joint name="toplid_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.1" rpy="0.0 0.0 0.0"/>
+        <parent link="base_link"/>
+        <child link="toplid_link"/>
+    </joint>
+
+</robot>
