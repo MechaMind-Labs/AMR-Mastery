@@ -2,6 +2,11 @@
 <robot name="mechabot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <link name="lidar_link">
+        <inertial>
+            <origin xyz="-0.028 0.0 -0.132" rpy="0.0 0.0 0.0"/>
+            <mass value="0.5"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial>
         <visual>
             <origin xyz="-0.028 0.0 -0.132" rpy="0.0 0.0 0.0"/>
             <geometry>
@@ -11,6 +16,15 @@
                 <color rgba="0.6 0.6 0.0 1.0"/>
             </material>
         </visual>
+        <collision>
+            <origin xyz="-0.028 0.0 -0.132" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_lidar.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="yellow">
+                <color rgba="0.6 0.6 0.0 1.0"/>
+            </material>
+        </collision>
     </link>
 
     <joint name="lidar_joint" type="fixed">
@@ -20,6 +34,11 @@
     </joint>
 
     <link name="camera_link">
+        <inertial>
+            <origin xyz="-0.118 0.0 -0.092" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial>
         <visual>
             <origin xyz="-0.118 0.0 -0.092" rpy="0.0 0.0 0.0"/>
             <geometry>
@@ -29,6 +48,15 @@
                 <color rgba="0.0 0.6 0.0 1.0"/>
             </material>
         </visual>
+        <collision>
+            <origin xyz="-0.118 0.0 -0.092" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_camera.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="green">
+                <color rgba="0.0 0.6 0.0 1.0"/>
+            </material>
+        </collision>
     </link>
 
     <joint name="camera_joint" type="fixed">
@@ -38,6 +66,11 @@
     </joint>
 
     <link name="imu_link">
+        <inertial>
+            <origin xyz="0.0 0.0 -0.035" rpy="0.0 0.0 0.0"/>
+            <mass value="0.1"/>
+            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+        </inertial>
         <visual>
             <origin xyz="0.0 0.0 -0.035" rpy="0.0 0.0 0.0"/>
             <geometry>
@@ -47,6 +80,15 @@
                 <color rgba="0.0 0.0 0.6 1.0"/>
             </material>
         </visual>
+        <collision>
+            <origin xyz="0.0 0.0 -0.035" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <mesh filename="package://mechabot_description/meshes/mechabot_imu.stl" scale="0.001 0.001 0.001"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 0.6 1.0"/>
+            </material>
+        </collision>
     </link>
 
     <joint name="imu_joint" type="fixed">
