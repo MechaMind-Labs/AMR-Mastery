@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<robot name="mechabot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Wheels -->
+    <gazebo reference="right_wheel_link">
+        <mu1>1000000000000000.0</mu1>
+        <mu2>1000000000000000.0</mu2>
+        <kp>1000000000000.0</kp>
+        <kd>10.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>0.1</maxVel>
+        <fdir1>1 0 0</fdir1>
+    </gazebo>
+
+    <gazebo reference="left_wheel_link">
+        <mu1>1000000000000000.0</mu1>
+        <mu2>1000000000000000.0</mu2>
+        <kp>1000000000000.0</kp>
+        <kd>10.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>0.1</maxVel>
+        <fdir1>1 0 0</fdir1>
+    </gazebo>
+
+    <!-- Caster Wheels -->
+    <gazebo reference="front_right_castor_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>1.0</maxVel>
+    </gazebo>
+
+    <gazebo reference="front_left_castor_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>1.0</maxVel>
+    </gazebo>
+
+    <gazebo reference="rear_right_castor_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>1.0</maxVel>
+    </gazebo>
+
+    <gazebo reference="rear_left_castor_link">
+        <mu1>0.1</mu1>
+        <mu2>0.1</mu2>
+        <kp>1000000.0</kp>
+        <kd>100.0</kd>
+        <minDepth>0.001</minDepth>
+        <maxVel>1.0</maxVel>
+    </gazebo>
+
+    <!-- ROS 2 Control Gazebo-->
+    <gazebo>
+        <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+            <parameters>$(find mechabot_controller)/config/mechabot_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>
