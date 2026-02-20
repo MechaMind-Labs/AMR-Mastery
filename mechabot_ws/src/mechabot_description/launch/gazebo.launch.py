@@ -85,6 +85,7 @@ def generate_launch_description():
         executable="parameter_bridge",
         arguments=[
             "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+            "/scan@sensor_msgs/msg/LaserScan[gz.msgs.LaserScan",
         ],
     )
 

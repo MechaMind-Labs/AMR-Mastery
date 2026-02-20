@@ -7,7 +7,7 @@
         <inertial>
             <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
             <mass value="5.0"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
@@ -39,7 +39,7 @@
         <inertial>
             <origin xyz="0.0 0.0925 -0.034" rpy="0.0 0.0 0.0"/>
             <mass value="0.5"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.0 0.0925 -0.034" rpy="0.0 0.0 0.0"/>
@@ -51,9 +51,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.0 0.0925 -0.034" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/mechabot_right_wheel.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.034"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/mechabot_right_wheel.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="blue">
                 <color rgba="0.0 0.0 0.6 1.0"/>
@@ -72,7 +73,7 @@
         <inertial>
             <origin xyz="0.0 -0.0925 -0.034" rpy="0.0 0.0 0.0"/>
             <mass value="0.5"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.0 -0.0925 -0.034" rpy="0.0 0.0 0.0"/>
@@ -84,9 +85,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.0 -0.0925 -0.034" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/mechabot_left_wheel.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.034"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/mechabot_left_wheel.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="blue">
                 <color rgba="0.0 0.0 0.6 1.0"/>
@@ -105,7 +107,7 @@
         <inertial>
             <origin xyz="-0.085 0.065 -0.021" rpy="0.0 0.0 0.0"/>
             <mass value="0.2"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="-0.085 0.065 -0.021" rpy="0.0 0.0 0.0"/>
@@ -117,9 +119,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.085 0.065 -0.021" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/front_right_castor.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.00625"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/front_right_castor.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="grey">
                 <color rgba="0.8 0.8 0.8 1.0"/>
@@ -128,7 +131,7 @@
     </link>
 
     <joint name="front_right_castor_joint" type="fixed">
-        <origin xyz="0.085 -0.065 0.0085" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.085 -0.065 0.00625" rpy="0.0 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="front_right_castor_link"/>
     </joint>
@@ -137,7 +140,7 @@
         <inertial>
             <origin xyz="-0.085 -0.065 -0.021" rpy="0.0 0.0 0.0"/>
             <mass value="0.2"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="-0.085 -0.065 -0.021" rpy="0.0 0.0 0.0"/>
@@ -149,9 +152,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="-0.085 -0.065 -0.021" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/front_left_castor.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.00625"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/front_left_castor.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="grey">
                 <color rgba="0.8 0.8 0.8 1.0"/>
@@ -160,7 +164,7 @@
     </link>
 
     <joint name="front_left_castor_joint" type="fixed">
-        <origin xyz="0.085 0.065 0.0085" rpy="0.0 0.0 0.0"/>
+        <origin xyz="0.085 0.065 0.00625" rpy="0.0 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="front_left_castor_link"/>
     </joint>
@@ -169,7 +173,7 @@
         <inertial>
             <origin xyz="0.085 0.065 -0.0205" rpy="0.0 0.0 0.0"/>
             <mass value="0.2"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.085 0.065 -0.0205" rpy="0.0 0.0 0.0"/>
@@ -181,9 +185,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.085 0.065 -0.0205" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/rear_right_castor.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.00625"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/rear_right_castor.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="grey">
                 <color rgba="0.8 0.8 0.8 1.0"/>
@@ -192,7 +197,7 @@
     </link>
 
     <joint name="rear_right_castor_joint" type="fixed">
-        <origin xyz="-0.085 -0.065 0.008" rpy="0.0 0.0 0.0"/>
+        <origin xyz="-0.085 -0.065 0.00635" rpy="0.0 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="rear_right_castor_link"/>
     </joint>
@@ -201,7 +206,7 @@
         <inertial>
             <origin xyz="0.085 -0.065 -0.0205" rpy="0.0 0.0 0.0"/>
             <mass value="0.2"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.085 -0.065 -0.0205" rpy="0.0 0.0 0.0"/>
@@ -213,9 +218,10 @@
             </material>
         </visual>
         <collision>
-            <origin xyz="0.085 -0.065 -0.0205" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.0125" rpy="0.0 0.0 0.0"/>
             <geometry>
-                <mesh filename="package://mechabot_description/meshes/rear_left_castor.stl" scale="0.001 0.001 0.001"/>
+                <sphere radius="0.00625"/>
+                <!-- <mesh filename="package://mechabot_description/meshes/rear_left_castor.stl" scale="0.001 0.001 0.001"/> -->
             </geometry>
             <material name="grey">
                 <color rgba="0.8 0.8 0.8 1.0"/>
@@ -224,16 +230,16 @@
     </link>
 
     <joint name="rear_left_castor_joint" type="fixed">
-        <origin xyz="-0.085 0.065 0.008" rpy="0.0 0.0 0.0"/>
+        <origin xyz="-0.085 0.065 0.00635" rpy="0.0 0.0 0.0"/>
         <parent link="base_link"/>
         <child link="rear_left_castor_link"/>
     </joint>
 
     <link name="toplid_link">
         <inertial>
-            <origin xyz="0.0 0.0 -0.1125" rpy="0.0 0.0 0.0"/>
+            <origin xyz="0.0 0.0 -0.001125" rpy="0.0 0.0 0.0"/>
             <mass value="2.0"/>
-            <inertia ixx="0.1" ixy="0.0" ixz="0.0" iyy="0.1" iyz="0.0" izz="0.1"/>
+            <inertia ixx="0.001" ixy="0.0" ixz="0.0" iyy="0.001" iyz="0.0" izz="0.001"/>
         </inertial>
         <visual>
             <origin xyz="0.0 0.0 -0.1125" rpy="0.0 0.0 0.0"/>

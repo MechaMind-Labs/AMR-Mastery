@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 100
+    update_rate: 100 #Hz
 
     wheel_controller:
       type: diff_drive_controller/DiffDriveController
@@ -34,8 +34,8 @@ wheel_controller:
     linear:
       x:
         has_velocity_limits    : true
-        max_velocity           : 4.5
-        min_velocity           : -4.5
+        max_velocity           : 2.0
+        min_velocity           : -2.0
         has_acceleration_limits: true
         max_acceleration       : 1.0
         min_acceleration       : -1.0
