@@ -59,19 +59,25 @@
         <maxVel>1.0</maxVel>
     </gazebo>
 
-    <!-- ROS 2 Control Gazebo-->
+    <!-- Gazebo Plugins -->
     <gazebo>
+        <!-- ign ros2_control -->
         <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
             <parameters>$(find mechabot_controller)/config/mechabot_controllers.yaml</parameters>
         </plugin>
 
+        <!-- lidar and camera -->
         <plugin filename="ignition-gazebo-sensors-system" name="ignition::gazebo::systems::Sensors">
             <render_engine>ogre2</render_engine>
         </plugin>
+
+        <!-- imu -->
+        <plugin filename="ignition-gazebo-imu-system" name="ignition::gazebo::systems::Imu"/>
     </gazebo>
 
     <!-- MechaBot Sensors-->
 
+    <!-- Lidar -->
     <gazebo reference="lidar_link">
         <sensor name="lidar" type="gpu_lidar">
             <pose>0 0 0 0 0 0</pose>
@@ -100,6 +106,58 @@
                     <stddev>0.01</stddev>
                 </noise>
             </lidar>
+        </sensor>
+    </gazebo>
+
+    <!-- IMU -->
+    <gazebo reference="imu_link">
+        <sensor name="imu" type="imu">
+            <always_on>true</always_on>
+            <update_rate>100</update_rate>
+            <gz_frame_id>imu_link</gz_frame_id>
+            <topic>imu</topic>
+            <imu>
+                <angular_velocity>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>2e-4</stddev>
+                        </noise>
+                    </z>
+                </angular_velocity>
+                <linear_acceleration>
+                    <x>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </x>
+                    <y>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </y>
+                    <z>
+                        <noise type="gaussian">
+                            <mean>0.0</mean>
+                            <stddev>1.7e-2</stddev>
+                        </noise>
+                    </z>
+                </linear_acceleration>
+            </imu>
         </sensor>
     </gazebo>
 

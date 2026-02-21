@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'read_lidar = mechabot_scripts.read_lidar:main',
+            'read_imu = mechabot_scripts.read_imu:main',
         ],
     },
 )
