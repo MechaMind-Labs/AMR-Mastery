@@ -20,7 +20,7 @@ Designed and built by [Kumar Utkarsh](https://github.com/Curious-Utkarsh): chass
 
 - [MechaBot running on real hardware (LinkedIn, April 2026)](https://www.linkedin.com/posts/kumar-utkarsh-124aab227_robotics-ros2-engineering-activity-7447948478909169665-3SPB) · [from design to a real robot (LinkedIn)](https://www.linkedin.com/feed/update/urn:li:activity:7450153133218910208/) · Instagram reels: [1](https://www.instagram.com/reel/DbIE1rgiRIr/) · [2](https://www.instagram.com/reel/DbX73znCI5l/)
 - Design: [custom AMR design pipeline](https://www.youtube.com/shorts/jlUMFFk9gu0) · [designing the DC motor bracket in Fusion 360](https://www.youtube.com/shorts/LaVOZSdebRM)
-- Program: [Day 0 → Day 45 build diary (playlist)](https://www.youtube.com/playlist?list=PLdMuvhY3uTKvNg6r5yPQSBe_NIYhc0Hwn) · [ROS 2 URDF tutorial](https://youtu.be/Lgmdcwq2P3M) · [ROS 2 foundations capstone: polygon drawing in TurtleSim](https://www.youtube.com/shorts/QHqWY9Gi4mw)
+- Program: [AMR Mastery Logs: Day 0 → Day 45 build diary (playlist)](https://www.youtube.com/playlist?list=PLdMuvhY3uTKvNg6r5yPQSBe_NIYhc0Hwn) · [ROS 2 URDF tutorial](https://youtu.be/Lgmdcwq2P3M) · [ROS 2 foundations capstone: polygon drawing in TurtleSim](https://www.youtube.com/shorts/QHqWY9Gi4mw)
 
 ## Key features
 
