@@ -76,7 +76,7 @@ On the robot: flash `mechabot_firmware/firmware/mechabot_control_firmware.ino` t
 - [Mobi](https://github.com/Curious-Utkarsh/mobi-service-robot) — the larger service robot built before MechaBot
 - [TurtleBot3 ArUco docking](https://github.com/Curious-Utkarsh/turtlebot3-aruco-docking) — the first version of this docking idea
 - [Edge Avoiding Robot](https://github.com/MechaMind-Labs/edge-avoiding-robot) · [TurtleSim basics](https://github.com/MechaMind-Labs/ros2-basics-with-turtlesim) — earlier MechaMind Labs workshops
-- Program details: [mechamindlabs.com](https://www.mechamindlabs.com/)
+- Full course on YouTube (40 lessons, being released through Dec 2026): [ROS 2 Full Course | AMR Mastery](https://www.youtube.com/playlist?list=PLae-2ikc0DUY)
 
 ---
 [MechaMind Labs](https://www.mechamindlabs.com/) · [YouTube](https://www.youtube.com/@MechaMindLabs) · [LinkedIn](https://www.linkedin.com/company/mechamindlabs/)
