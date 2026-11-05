@@ -7,7 +7,7 @@
 
 **MechaBot** is a two-wheel differential-drive robot that maps a room, localizes, patrols waypoints, watches its battery, and returns to its charging dock by itself — finding the dock with a QR marker and stopping on LiDAR. It is the reference robot of the MechaMind Labs **AMR Mastery** program, and this repository holds the program's code in the order it was taught, from the first ROS 2 node to the physical robot.
 
-Designed and built by [Kumar Utkarsh](https://github.com/Curious-Utkarsh): chassis CAD, URDF, ESP32 firmware, the C++ `ros2_control` interface, the Nav2 setup and the docking logic. Learners in two cohorts rebuilt it in simulation and on their own hardware.
+Designed and built by [Kumar Utkarsh](https://github.com/Curious-Utkarsh): chassis CAD, URDF, ESP32 firmware, the C++ `ros2_control` interface, the Nav2 setup and the docking logic. Learners in two live batches rebuilt it in simulation and on their own hardware.
 
 ## Demo
 
