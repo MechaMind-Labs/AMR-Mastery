@@ -383,7 +383,7 @@ By the end of this tutorial, you will understand:
 ## 📧 Contact
 
 **MechaMind Labs**  
-Website: [mechamindlabs.com](https://mechamindlabs.com)
+YouTube: [MechaMind Labs](https://www.youtube.com/@MechaMindLabs) · Free full course: [AMR Mastery](https://www.youtube.com/playlist?list=PLae-2ikc0DUY)
 
 ---
 
