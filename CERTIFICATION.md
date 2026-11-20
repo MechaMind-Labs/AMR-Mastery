@@ -1,6 +1,8 @@
 # AMR Mastery: Certificate of Completion
 
-> **Status:** the submission form opens soon. Its link will be added here and in the pinned comment of Lesson 40. You can start your submission repo today: everything below already applies.
+> **Submit your work:** https://forms.gle/b1qunB8uZEpB2QRR6 (you sign in with a Google account)
+>
+> **Verify a certificate:** https://mechamind-labs.github.io/certificates/
 
 AMR Mastery is a **free course** on the [MechaMind Labs YouTube channel](https://www.youtube.com/playlist?list=PLae-2ikc0DUY): 40 lessons, 22 assignments, and every resource free. You get the slides, PDFs, command lists, CAD and STL files, meshes, URDF, circuit diagrams, assignment briefs and all the code in this repository. Learn at your own pace.
 
@@ -33,9 +35,9 @@ You can start with the Simulation Track and upgrade later. Add the hardware work
 2. **Finish** the assignments and the capstone; fill in the READMEs and the report.
 3. **Tag** the version you want reviewed: `git tag v1.0-submission && git push --tags`.
 4. **Upload** your demo video(s) to YouTube as *Unlisted*.
-5. **Submit** the form (link coming soon). It asks for your repo URL and tag, your video links, your name as it should appear on the certificate, and three short questions about your own system.
+5. **Submit** the [form](https://forms.gle/b1qunB8uZEpB2QRR6). You sign in with your Google account, and all emails about your submission go to that address. The form asks for your repo URL and tag, your video links, your name as it should appear on the certificate, and three short questions about your own system.
 
-You get an automatic email within minutes. If something is missing (repo not public, tag not found, folders missing), the email tells you exactly what to fix.
+You get an automatic email within minutes. If something is missing (repo not public, tag not found, folders missing, too few commits), the email tells you exactly what to fix. If GitHub cannot be reached at that moment, the email says the checks are still running, and the result follows within a few hours.
 
 ## How your work is evaluated
 
@@ -64,7 +66,9 @@ You get the acknowledgement and the automatic pre-check within minutes. Reviews 
 
 ## Verifying a certificate
 
-Every certificate has an ID (for example `MML-AMR-SIM-2026-0001` or `MML-AMR-HW-2026-0001`) and a QR code. Both lead to a public verify page showing the name, result and a link to the project. Anyone, including an employer, can check it in one scan.
+Every certificate has an ID (for example `MML-AMR-SIM-2026-0001-K7QXM` or `MML-AMR-HW-2026-0001-K7QXM`) and a QR code. Both open the [verify page](https://mechamind-labs.github.io/certificates/), which shows the name, course, track, result, issue date and, if you agreed, a link to your project. Anyone you share the ID or QR code with, an employer for example, can check it in one scan.
+
+A certificate can only be looked up with its full ID. There is no public list of certificates, and the last five characters of each ID are random, so IDs cannot be guessed.
 
 ## Rules
 
@@ -72,7 +76,13 @@ Every certificate has an ID (for example `MML-AMR-SIM-2026-0001` or `MML-AMR-HW-
 2. The capstone video must show you (face or voice) and one continuous run of the mission.
 3. Keep your repo public at the submitted tag until your certificate is issued.
 4. Up to two resubmissions; after that, wait 30 days.
-5. A certificate based on copied work is revoked and shown as revoked on the verify page.
+5. A certificate based on copied work is revoked. You get an email with the reason, and the verify page shows it as revoked.
+
+## Your privacy
+
+- Your submission, your email address, your scores and the review notes are seen only by the reviewer (Kumar Utkarsh). Other learners never see them.
+- Emails about your submission go only to you.
+- When someone verifies your certificate with its ID, they see your name, course, track, result and issue date. Your project link is shown, and your full name is used, only if you ticked the consent box in the form; otherwise only your initials are shown.
 
 ## FAQ
 
