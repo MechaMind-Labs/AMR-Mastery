@@ -6,15 +6,26 @@ AMR Mastery is a **free course** on the [MechaMind Labs YouTube channel](https:/
 
 If you complete the assignments and the final project and submit your work, it is **reviewed by hand**. If it passes, you receive an official **MechaMind Labs Certificate of Completion**. The certificate is for practical work you can show, not for watching the videos.
 
+## Two certificates
+
+| | **Simulation Track** | **Hardware Track** |
+|---|---|---|
+| Lessons | 1–33 and 40 (34 lessons) | All 40 lessons |
+| Assignments | AS01–AS17 + AS22 (18) | AS01–AS22 (22) |
+| Final project | In simulation | In simulation **and** on a physical robot |
+| Hardware needed | None | Your own robot (MechaBot or your own design) |
+
+You can start with the Simulation Track and upgrade later. Add the hardware work to the same repo and submit again; the Simulation certificate stays valid.
+
 ## What you need to complete
 
 | Requirement | Details |
 |---|---|
-| Assignments | AS01–AS17 and AS22, each in its own folder with code, a short README and evidence (GIF, screenshot or video link). Up to 2 of AS01–AS17 may be submitted as "attempted", with an honest write-up of what did not work |
+| Assignments | Simulation Track: AS01–AS17 and AS22. Hardware Track: also AS18–AS21. Each in its own folder with code, a short README and evidence (GIF, screenshot or video link). Up to 2 of AS01–AS17 may be submitted as "attempted", with an honest write-up of what did not work |
 | Final project (capstone) | Your MechaBot in **your own Gazebo world**: map it, save the map, localize, patrol at least 3 waypoints, then return and dock on **your own docking station design** (AS07). Make at least one visible change to the robot so it is yours |
 | Demo video | 3–6 min, unlisted on YouTube, one continuous run of the mission. Start by saying your name and the date (face or voice), and end by explaining one thing you changed or debugged |
 | Report | `docs/report.md`, 2–4 pages: what you built, architecture diagram, your changes, hardest problems, results and limits, next steps |
-| Hardware (optional) | AS18–AS21 on a physical robot + a hardware demo video. Your certificate then also says **"Hardware track: completed"**. Hardware is never required |
+| Hardware (Hardware Track only) | AS18–AS21 on a physical robot + a 2–5 min hardware demo video of the same mission, with you visible or audible at least once |
 
 ## How to submit
 
@@ -30,7 +41,7 @@ You get an automatic email within minutes. If something is missing (repo not pub
 
 | Section | Points |
 |---|---|
-| Assignments (AS01–AS17, AS22) | 35 |
+| Assignments of your track | 35 |
 | Capstone works end to end | 25 |
 | ROS 2 package and code quality | 10 |
 | Repository structure and Git history | 5 |
@@ -53,7 +64,7 @@ You get the acknowledgement and the automatic pre-check within minutes. Reviews 
 
 ## Verifying a certificate
 
-Every certificate has an ID (for example `MML-AMR-2026-0001`) and a QR code. Both lead to a public verify page showing the name, result and a link to the project. Anyone, including an employer, can check it in one scan.
+Every certificate has an ID (for example `MML-AMR-SIM-2026-0001` or `MML-AMR-HW-2026-0001`) and a QR code. Both lead to a public verify page showing the name, result and a link to the project. Anyone, including an employer, can check it in one scan.
 
 ## Rules
 
@@ -65,7 +76,7 @@ Every certificate has an ID (for example `MML-AMR-2026-0001`) and a QR code. Bot
 
 ## FAQ
 
-- **Do I need hardware?** No. Simulation is enough for the certificate.
+- **Do I need hardware?** No. The Simulation Track certificate needs no hardware.
 - **Is there a deadline?** No. Submit when your work is ready.
 - **I was in a 2026 live batch.** Certificates already issued stay valid.
 - **Questions?** Ask in the comments of the relevant lesson on YouTube.
