@@ -5,7 +5,7 @@ Course: [ROS 2 Full Course | AMR Mastery](https://www.youtube.com/playlist?list=
 
 | | |
 |---|---|
-| Track | Simulation ☐ · Simulation + Hardware ☐ |
+| Track | Simulation Track ☐ · Hardware Track ☐ |
 | Capstone demo | <!-- unlisted YouTube link --> |
 | Hardware demo | <!-- optional --> |
 | Report | [docs/report.md](docs/report.md) |

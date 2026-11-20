@@ -38,12 +38,12 @@ AS14_slam_mapping|L28|MechaBot Warehouse Mapping using SLAM Toolbox
 AS15_map_saving|L28|MechaBot Map Saving & Verification
 AS16_nav2_navigation|L30|MechaBot Localization & Autonomous Navigation using Nav2
 AS17_patrol_docking|L33|Autonomous Warehouse Patrol & Auto-Docking Mission
-AS18_hw_bringup|L38|(Hardware track) Hardware Bring-Up & Wireless Teleoperation
-AS19_hw_mapping|L38|(Hardware track) Real-World Mapping using SLAM Toolbox
-AS20_hw_navigation|L39|(Hardware track) Real-World Autonomous Navigation using Nav2
-AS21_hw_patrol_docking|L39|(Hardware track) Autonomous Patrol, Docking & Undocking
+AS18_hw_bringup|L38|(Hardware Track) Hardware Bring-Up & Wireless Teleoperation
+AS19_hw_mapping|L38|(Hardware Track) Real-World Mapping using SLAM Toolbox
+AS20_hw_navigation|L39|(Hardware Track) Real-World Autonomous Navigation using Nav2
+AS21_hw_patrol_docking|L39|(Hardware Track) Autonomous Patrol, Docking & Undocking
 AS22_github|L40|Publish Your MechaBot Project to GitHub
 LIST
 
 echo "Done. Next: fill README.md, commit, and keep committing as you work."
-echo "Simulation-track learners can delete AS18–AS21."
+echo "Simulation Track learners can delete AS18–AS21 (they are only for the Hardware Track)."
