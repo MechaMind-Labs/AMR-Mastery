@@ -9,6 +9,12 @@
 
 Designed and built by [Kumar Utkarsh](https://github.com/Curious-Utkarsh): chassis CAD, URDF, ESP32 firmware, the C++ `ros2_control` interface, the Nav2 setup and the docking logic. Learners in two live batches rebuilt it in simulation and on their own hardware.
 
+## Free course and certificate
+
+AMR Mastery is now a **free course** on YouTube: [40 lessons](https://www.youtube.com/playlist?list=PLae-2ikc0DUY) that build this robot step by step, from Linux and the first ROS 2 node to the physical robot. Every resource is free: slides and PDFs, command lists, CAD (STEP) and STL files, meshes, URDF, circuit diagrams and assignment briefs in the [course Drive folder](https://drive.google.com/drive/folders/1y5IE7BXKWbOD0tYpQ6vozare-sCix_9v), and all the code in this repository. Learn at your own pace.
+
+Complete the assignments and the final project, submit your work, and after a manual review you can receive a **MechaMind Labs Certificate of Completion**. The certificate is for practical work, not for watching the videos. How it works: [CERTIFICATION.md](CERTIFICATION.md).
+
 ## Demo
 
 <table>
@@ -76,7 +82,7 @@ On the robot: flash `mechabot_firmware/firmware/mechabot_control_firmware.ino` t
 - [Mobi](https://github.com/Curious-Utkarsh/mobi-service-robot) — the larger service robot built before MechaBot
 - [TurtleBot3 ArUco docking](https://github.com/Curious-Utkarsh/turtlebot3-aruco-docking) — the first version of this docking idea
 - [Edge Avoiding Robot](https://github.com/MechaMind-Labs/edge-avoiding-robot) · [TurtleSim basics](https://github.com/MechaMind-Labs/ros2-basics-with-turtlesim) — earlier MechaMind Labs workshops
-- Full course on YouTube (40 lessons, being released through Dec 2026): [ROS 2 Full Course | AMR Mastery](https://www.youtube.com/playlist?list=PLae-2ikc0DUY)
+- Free full course on YouTube (40 lessons; all public by 1 Dec 2026): [ROS 2 Full Course | AMR Mastery](https://www.youtube.com/playlist?list=PLae-2ikc0DUY) · [Certificate of Completion](CERTIFICATION.md)
 
 ---
-[MechaMind Labs](https://www.mechamindlabs.com/) · [YouTube](https://www.youtube.com/@MechaMindLabs) · [LinkedIn](https://www.linkedin.com/company/mechamindlabs/)
+[MechaMind Labs](https://github.com/MechaMind-Labs) · [YouTube](https://www.youtube.com/@MechaMindLabs) · [LinkedIn](https://www.linkedin.com/company/mechamindlabs/)
